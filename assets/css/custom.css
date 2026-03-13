@@ -1,0 +1,19 @@
+
+/* Ensure the main content starts below the fixed header properly */
+.flex.flex-col.min-h-screen {
+    padding-top: 5rem;
+}
+
+/* Force-hide the skip-link element entirely */
+a[href="#main-content"] {
+    display: none !important;
+}
+
+/* Alternative selector used by Blowfish */
+.skip-link {
+    display: none !important;
+}
+
+.header-spacer {
+    min-height: 80px !important; /* Set exactly what you want here */
+}

@@ -1,0 +1,14 @@
+/* Fix the header to the top of the viewport */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+/* Offset the main content so it starts below the fixed header */
+/* Adjust the 'padding-top' value to match the approximate height of your header. */
+/* Using a value like 80px or 100px is usually a good starting point. */
+body {
+  padding-top: 400px; 
+}

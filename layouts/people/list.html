@@ -1,0 +1,102 @@
+{{ define "main" }}
+<div class="max-w-7xl mx-auto px-6 sm:px-14 md:px-24 lg:px-32">
+  <header class="mb-10">
+    <!-- <h1 class="text-3xl font-extrabold text-neutral-900 dark:text-neutral-100">{{ .Title }}</h1> -->
+    <div class="mt-4 text-neutral-700 dark:text-neutral-300">{{ .Content }}</div>
+  </header>
+
+  {{ $groups := slice "Faculty" "PhDs & Postdocs" "Other" }}
+  {{ $pages := .Pages }}
+
+  {{ range $group := $groups }}
+    {{ $groupPages := where $pages "Params.group" $group }}
+    
+    {{/* Sort Faculty by seniority */}}
+    {{ if eq $group "Faculty" }}
+      {{ $groupPages = $groupPages.ByParam "seniority" }}
+    {{ end }}
+
+    {{ if gt (len $groupPages) 0 }}
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 text-neutral-800 dark:text-neutral-200 border-b border-neutral-200 dark:border-neutral-700 pb-2">{{ $group }}</h2>
+        <style>
+          @media (min-width: 1268px) {
+            #people-grid {
+              grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+          }
+        </style>
+        <div id="people-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          {{ range $groupPages }}
+            <div class="flex flex-col items-center text-center mb-5">
+              <div class="relative w-40 h-40 mb-2">
+                {{ $image := .Params.image }}
+                {{ $processedImage := "" }}
+                
+                {{/* Try to resolve image as a resource in assets/ */}}
+                {{ if $image }}
+                  {{/* Remove "img/" prefix if present to match assets structure */}}
+                  {{ $imagePath := strings.TrimPrefix "img/" $image }}
+                  {{ $resource := resources.Get $imagePath }}
+                  
+                  {{ if $resource }}
+                    {{/* Crop to square */}}
+                    {{ $processedImage = $resource.Fill "300x300 Center" }}
+                  {{ else }}
+                    {{/* Fallback: try finding it directly if path was relative or different */}}
+                    {{ $resource = resources.Get $image }}
+                    {{ if $resource }}
+                      {{ $processedImage = $resource.Fill "300x300 Center" }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+
+                {{/* If no image found, use placeholder */}}
+                {{ if not (or $processedImage $image) }}
+                  {{ $placeholderResource := resources.Get "place-holder.png" }}
+                  {{ if $placeholderResource }}
+                    {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
+                  {{ end }}
+                {{ end }}
+
+                {{ if $processedImage }}
+                  <img src="{{ $processedImage.RelPermalink }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700">
+                {{ else if $image }}
+                  {{/* Fallback for external URLs or static images not in assets */}}
+                  <img src="{{ $image | relURL }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700">
+                {{ else }}
+                  {{/* Final fallback if even placeholder is missing */}}
+                  <div class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400">
+                    <span class="text-4xl">?</span>
+                  </div>
+                {{ end }}
+              </div>
+              
+              <h3 class="text-sm font-bold text-neutral-900 dark:text-neutral-100 leading-tight ">
+                <a href="{{ .RelPermalink }}" class="hover:text-primary-600 transition-colors">{{ .Title }}</a>
+              </h3>
+              
+              <p class="text-xs text-neutral-600 dark:text-neutral-400 font-medium">{{ .Params.description }}</p>
+              
+              <div class="flex flex-col gap-1 text-xs">
+                <!-- {{ if .Params.email }}
+                  <a href="mailto:{{ .Params.email }}" class="text-primary-600 hover:underline flex items-center justify-center gap-1">
+                    {{ .Params.email }}
+                  </a>
+                {{ end }}
+                -->
+                {{ if .Params.website }}
+                  <a href="{{ .Params.website }}" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:underline">
+                    Personal Website
+                  </a>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

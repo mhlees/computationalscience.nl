@@ -1,0 +1,50 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Computational Science Lab'
+
+# --- 1. THEME SELECTION ---
+theme = "blowfish"
+
+# --- 2. MENU CONFIGURATION ---
+# (Keep these outside of params)
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+[[menu.main]]
+  name = "People"
+  url = "/people"
+  weight = 20
+[[menu.main]]
+  name = "Education"
+  url = "/education"
+  weight = 30
+[[menu.main]]
+  name = "Publications"
+  url = "https://publications.computationalscience.nl"
+  weight = 40
+[[menu.main]]
+  name = "Contact"
+  url = "/contact"
+  weight = 50
+
+# --- 3. THEME PARAMS ---
+[params]
+  colorScheme = "blowfish"
+  defaultAppearance = "dark" # Blowfish uses 'defaultAppearance', not 'defaultTheme'
+  # Header Logo
+  logo = "logo_only.png"
+  # enableA11y = false
+  customCSS = ["css/custom.css"] 
+
+[params.header]
+  layout = "fixed-fill-blur"
+
+# --- 4. HOMEPAGE SPECIFIC ---
+[params.homepage]
+  layout = "background"
+  # Add this line to ensure the content doesn't hide the background
+  layoutBackgroundBlur = true
+
+[markup.goldmark.renderer]
+  unsafe = true
