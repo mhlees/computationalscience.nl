@@ -31,7 +31,7 @@ theme = "blowfish"
 # --- 3. THEME PARAMS ---
 [params]
   colorScheme = "blowfish"
-  defaultAppearance = "dark" # Blowfish uses 'defaultAppearance', not 'defaultTheme'
+  defaultAppearance = "light" # Blowfish uses 'defaultAppearance', not 'defaultTheme'
   # Header Logo
   logo = "logo_only.png"
   # enableA11y = false
