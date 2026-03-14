@@ -1,7 +1,7 @@
 ---
 title: "Computational Science Lab"
 description: "University of Amsterdam"
-layout: "background"
+layout: "Hero"
 ---
 
 <div class="block dark:hidden">

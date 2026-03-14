@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" style="background: radial-gradient(circle at center, #061e26 0%, #020617 100%); overflow: hidden;">
+  <defs>
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .grid-line {
+      stroke: #00e5ff;
+      stroke-width: 1.2; 
+      opacity: 0.35;
+    }
+
+    .node {
+      filter: url(#neon-glow);
+      /* Color pulse only! No scaling, so they never detach from the lines */
+      animation: colorPulse 3s infinite alternate ease-in-out;
+    }
+
+    /* Staggered CSS color pulses for organic feel */
+    .node:nth-child(2n) { animation-duration: 4.1s; animation-delay: 0.3s; fill: #00ffa3; }
+    .node:nth-child(3n) { animation-duration: 2.7s; animation-delay: 1.1s; fill: #00e5ff; }
+    .node:nth-child(5n) { animation-duration: 5.2s; animation-delay: 0.7s; fill: #b9ffea; }
+    .node:nth-child(7n) { animation-duration: 3.8s; animation-delay: 1.5s; fill: #00a2ff; }
+
+    @keyframes colorPulse {
+      0% { opacity: 0.2; fill: #00e5ff; }
+      100% { opacity: 1; fill: #ffffff; }
+    }
+    
+    /* Using absolute 0px 0px origin ensures perfect centering across all browsers */
+    .mesh-cam {
+      transform-origin: 0px 0px;
+      animation: camPan 15s infinite alternate ease-in-out;
+    }
+    @keyframes camPan {
+      0% { transform: translate(400px, 300px) scale(3.5, 1.5) rotate(45deg); }
+      100% { transform: translate(400px, 320px) scale(3.7, 1.6) rotate(43deg); }
+    }
+  </style>
+
+  <g class="mesh-cam">
+    
+    <g class="grid-line">
+      <line x1="-125" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="-125;-145;-105;-125" dur="3.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-125;-105;-145;-125" dur="4.3s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="-125;-105;-145;-125" dur="4.3s" repeatCount="indefinite"/><animate attributeName="y2" values="-125;-140;-110;-125" dur="5.5s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="-125;-140;-110;-125" dur="5.5s" repeatCount="indefinite"/><animate attributeName="y2" values="-125;-110;-140;-125" dur="3.7s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="75" y1="0" y2="0"><animate attributeName="y1" values="-125;-110;-140;-125" dur="3.7s" repeatCount="indefinite"/><animate attributeName="y2" values="-125;-145;-105;-125" dur="4.9s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="125" y1="0" y2="0"><animate attributeName="y1" values="-125;-145;-105;-125" dur="4.9s" repeatCount="indefinite"/><animate attributeName="y2" values="-125;-105;-145;-125" dur="6.1s" repeatCount="indefinite"/></line>
+
+      <line x1="-125" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="-75;-55;-95;-75" dur="4.7s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-95;-55;-75" dur="3.5s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="-75;-95;-55;-75" dur="3.5s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-60;-90;-75" dur="5.1s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="-75;-60;-90;-75" dur="5.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-90;-60;-75" dur="4.1s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="75" y1="0" y2="0"><animate attributeName="y1" values="-75;-90;-60;-75" dur="4.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-55;-95;-75" dur="5.9s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="125" y1="0" y2="0"><animate attributeName="y1" values="-75;-55;-95;-75" dur="5.9s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-95;-55;-75" dur="3.9s" repeatCount="indefinite"/></line>
+
+      <line x1="-125" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="-25;-45;-5;-25" dur="5.3s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-5;-45;-25" dur="4.1s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="-25;-5;-45;-25" dur="4.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-40;-10;-25" dur="3.3s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="-25;-40;-10;-25" dur="3.3s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-10;-40;-25" dur="6.5s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="75" y1="0" y2="0"><animate attributeName="y1" values="-25;-10;-40;-25" dur="6.5s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-45;-5;-25" dur="4.5s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="125" y1="0" y2="0"><animate attributeName="y1" values="-25;-45;-5;-25" dur="4.5s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-5;-45;-25" dur="5.7s" repeatCount="indefinite"/></line>
+
+      <line x1="-125" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="25;45;5;25" dur="3.9s" repeatCount="indefinite"/><animate attributeName="y2" values="25;5;45;25" dur="5.5s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="25;5;45;25" dur="5.5s" repeatCount="indefinite"/><animate attributeName="y2" values="25;40;10;25" dur="4.7s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="25;40;10;25" dur="4.7s" repeatCount="indefinite"/><animate attributeName="y2" values="25;10;40;25" dur="3.1s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="75" y1="0" y2="0"><animate attributeName="y1" values="25;10;40;25" dur="3.1s" repeatCount="indefinite"/><animate attributeName="y2" values="25;45;5;25" dur="5.3s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="125" y1="0" y2="0"><animate attributeName="y1" values="25;45;5;25" dur="5.3s" repeatCount="indefinite"/><animate attributeName="y2" values="25;5;45;25" dur="4.3s" repeatCount="indefinite"/></line>
+
+      <line x1="-125" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="75;55;95;75" dur="4.5s" repeatCount="indefinite"/><animate attributeName="y2" values="75;95;55;75" dur="6.1s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="75;95;55;75" dur="6.1s" repeatCount="indefinite"/><animate attributeName="y2" values="75;60;90;75" dur="3.7s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="75;60;90;75" dur="3.7s" repeatCount="indefinite"/><animate attributeName="y2" values="75;90;60;75" dur="5.1s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="75" y1="0" y2="0"><animate attributeName="y1" values="75;90;60;75" dur="5.1s" repeatCount="indefinite"/><animate attributeName="y2" values="75;55;95;75" dur="4.9s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="125" y1="0" y2="0"><animate attributeName="y1" values="75;55;95;75" dur="4.9s" repeatCount="indefinite"/><animate attributeName="y2" values="75;95;55;75" dur="3.5s" repeatCount="indefinite"/></line>
+
+      <line x1="-125" x2="-125" y1="0" y2="0"><animate attributeName="y1" values="-125;-145;-105;-125" dur="3.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-55;-95;-75" dur="4.7s" repeatCount="indefinite"/></line>
+      <line x1="-125" x2="-125" y1="0" y2="0"><animate attributeName="y1" values="-75;-55;-95;-75" dur="4.7s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-45;-5;-25" dur="5.3s" repeatCount="indefinite"/></line>
+      <line x1="-125" x2="-125" y1="0" y2="0"><animate attributeName="y1" values="-25;-45;-5;-25" dur="5.3s" repeatCount="indefinite"/><animate attributeName="y2" values="25;45;5;25" dur="3.9s" repeatCount="indefinite"/></line>
+      <line x1="-125" x2="-125" y1="0" y2="0"><animate attributeName="y1" values="25;45;5;25" dur="3.9s" repeatCount="indefinite"/><animate attributeName="y2" values="75;55;95;75" dur="4.5s" repeatCount="indefinite"/></line>
+
+      <line x1="-75" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="-125;-105;-145;-125" dur="4.3s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-95;-55;-75" dur="3.5s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="-75;-95;-55;-75" dur="3.5s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-5;-45;-25" dur="4.1s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="-25;-5;-45;-25" dur="4.1s" repeatCount="indefinite"/><animate attributeName="y2" values="25;5;45;25" dur="5.5s" repeatCount="indefinite"/></line>
+      <line x1="-75" x2="-75" y1="0" y2="0"><animate attributeName="y1" values="25;5;45;25" dur="5.5s" repeatCount="indefinite"/><animate attributeName="y2" values="75;95;55;75" dur="6.1s" repeatCount="indefinite"/></line>
+
+      <line x1="-25" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="-125;-140;-110;-125" dur="5.5s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-60;-90;-75" dur="5.1s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="-75;-60;-90;-75" dur="5.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-40;-10;-25" dur="3.3s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="-25;-40;-10;-25" dur="3.3s" repeatCount="indefinite"/><animate attributeName="y2" values="25;40;10;25" dur="4.7s" repeatCount="indefinite"/></line>
+      <line x1="-25" x2="-25" y1="0" y2="0"><animate attributeName="y1" values="25;40;10;25" dur="4.7s" repeatCount="indefinite"/><animate attributeName="y2" values="75;60;90;75" dur="3.7s" repeatCount="indefinite"/></line>
+
+      <line x1="25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="-125;-110;-140;-125" dur="3.7s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-90;-60;-75" dur="4.1s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="-75;-90;-60;-75" dur="4.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-10;-40;-25" dur="6.5s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="-25;-10;-40;-25" dur="6.5s" repeatCount="indefinite"/><animate attributeName="y2" values="25;10;40;25" dur="3.1s" repeatCount="indefinite"/></line>
+      <line x1="25" x2="25" y1="0" y2="0"><animate attributeName="y1" values="25;10;40;25" dur="3.1s" repeatCount="indefinite"/><animate attributeName="y2" values="75;90;60;75" dur="5.1s" repeatCount="indefinite"/></line>
+
+      <line x1="75" x2="75" y1="0" y2="0"><animate attributeName="y1" values="-125;-145;-105;-125" dur="4.9s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-55;-95;-75" dur="5.9s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="75" y1="0" y2="0"><animate attributeName="y1" values="-75;-55;-95;-75" dur="5.9s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-45;-5;-25" dur="4.5s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="75" y1="0" y2="0"><animate attributeName="y1" values="-25;-45;-5;-25" dur="4.5s" repeatCount="indefinite"/><animate attributeName="y2" values="25;45;5;25" dur="5.3s" repeatCount="indefinite"/></line>
+      <line x1="75" x2="75" y1="0" y2="0"><animate attributeName="y1" values="25;45;5;25" dur="5.3s" repeatCount="indefinite"/><animate attributeName="y2" values="75;55;95;75" dur="4.9s" repeatCount="indefinite"/></line>
+
+      <line x1="125" x2="125" y1="0" y2="0"><animate attributeName="y1" values="-125;-105;-145;-125" dur="6.1s" repeatCount="indefinite"/><animate attributeName="y2" values="-75;-95;-55;-75" dur="3.9s" repeatCount="indefinite"/></line>
+      <line x1="125" x2="125" y1="0" y2="0"><animate attributeName="y1" values="-75;-95;-55;-75" dur="3.9s" repeatCount="indefinite"/><animate attributeName="y2" values="-25;-5;-45;-25" dur="5.7s" repeatCount="indefinite"/></line>
+      <line x1="125" x2="125" y1="0" y2="0"><animate attributeName="y1" values="-25;-5;-45;-25" dur="5.7s" repeatCount="indefinite"/><animate attributeName="y2" values="25;5;45;25" dur="4.3s" repeatCount="indefinite"/></line>
+      <line x1="125" x2="125" y1="0" y2="0"><animate attributeName="y1" values="25;5;45;25" dur="4.3s" repeatCount="indefinite"/><animate attributeName="y2" values="75;95;55;75" dur="3.5s" repeatCount="indefinite"/></line>
+    </g>
+
+    <g>
+      <circle class="node" cx="-125" cy="0" r="3.5"><animate attributeName="cy" values="-125;-145;-105;-125" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-75" cy="0" r="3.5"><animate attributeName="cy" values="-125;-105;-145;-125" dur="4.3s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-25" cy="0" r="3.5"><animate attributeName="cy" values="-125;-140;-110;-125" dur="5.5s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="25" cy="0" r="3.5"><animate attributeName="cy" values="-125;-110;-140;-125" dur="3.7s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="75" cy="0" r="3.5"><animate attributeName="cy" values="-125;-145;-105;-125" dur="4.9s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="125" cy="0" r="3.5"><animate attributeName="cy" values="-125;-105;-145;-125" dur="6.1s" repeatCount="indefinite"/></circle>
+
+      <circle class="node" cx="-125" cy="0" r="3.5"><animate attributeName="cy" values="-75;-55;-95;-75" dur="4.7s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-75" cy="0" r="3.5"><animate attributeName="cy" values="-75;-95;-55;-75" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-25" cy="0" r="3.5"><animate attributeName="cy" values="-75;-60;-90;-75" dur="5.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="25" cy="0" r="3.5"><animate attributeName="cy" values="-75;-90;-60;-75" dur="4.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="75" cy="0" r="3.5"><animate attributeName="cy" values="-75;-55;-95;-75" dur="5.9s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="125" cy="0" r="3.5"><animate attributeName="cy" values="-75;-95;-55;-75" dur="3.9s" repeatCount="indefinite"/></circle>
+
+      <circle class="node" cx="-125" cy="0" r="3.5"><animate attributeName="cy" values="-25;-45;-5;-25" dur="5.3s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-75" cy="0" r="3.5"><animate attributeName="cy" values="-25;-5;-45;-25" dur="4.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-25" cy="0" r="3.5"><animate attributeName="cy" values="-25;-40;-10;-25" dur="3.3s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="25" cy="0" r="3.5"><animate attributeName="cy" values="-25;-10;-40;-25" dur="6.5s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="75" cy="0" r="3.5"><animate attributeName="cy" values="-25;-45;-5;-25" dur="4.5s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="125" cy="0" r="3.5"><animate attributeName="cy" values="-25;-5;-45;-25" dur="5.7s" repeatCount="indefinite"/></circle>
+
+      <circle class="node" cx="-125" cy="0" r="3.5"><animate attributeName="cy" values="25;45;5;25" dur="3.9s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-75" cy="0" r="3.5"><animate attributeName="cy" values="25;5;45;25" dur="5.5s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-25" cy="0" r="3.5"><animate attributeName="cy" values="25;40;10;25" dur="4.7s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="25" cy="0" r="3.5"><animate attributeName="cy" values="25;10;40;25" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="75" cy="0" r="3.5"><animate attributeName="cy" values="25;45;5;25" dur="5.3s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="125" cy="0" r="3.5"><animate attributeName="cy" values="25;5;45;25" dur="4.3s" repeatCount="indefinite"/></circle>
+
+      <circle class="node" cx="-125" cy="0" r="3.5"><animate attributeName="cy" values="75;55;95;75" dur="4.5s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-75" cy="0" r="3.5"><animate attributeName="cy" values="75;95;55;75" dur="6.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="-25" cy="0" r="3.5"><animate attributeName="cy" values="75;60;90;75" dur="3.7s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="25" cy="0" r="3.5"><animate attributeName="cy" values="75;90;60;75" dur="5.1s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="75" cy="0" r="3.5"><animate attributeName="cy" values="75;55;95;75" dur="4.9s" repeatCount="indefinite"/></circle>
+      <circle class="node" cx="125" cy="0" r="3.5"><animate attributeName="cy" values="75;95;55;75" dur="3.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+  </g>
+</svg>

@@ -45,12 +45,15 @@ theme = "blowfish"
   layout = "background"
   # Add this line to ensure the content doesn't hide the background
   layoutBackgroundBlur = true
+  homepageImage = "animated.svg"
+[params.footer]
+  showThemeAttribution = false
 
 [params.homepage.linkedinWidget]
   maxWords = 300
   # Optional layout controls
   descClampLines = 10     # 0 disables line clamp; set to e.g. 5 to clamp
-  cardMinHeight = "600"     # e.g. "360px" to unify card heights
+  cardMinHeight = "600px"     # e.g. "360px" to unify card heights
 
 [markup.goldmark.renderer]
   unsafe = true
