@@ -22,6 +22,8 @@ Our mission is to drive positive change by developing credible computational mod
 We translate these insights into actionable models within critical domains such as health, sustainability, climate change, and socio-economic-technical systems. By actively developing and deploying these models in close partnership with key stakeholders, we ensure our work drives tangible, real-world impact. Beyond direct application, we advance the frontiers of Computational Science, Complexity Science, and Informatics to pioneer modelling and simulation methodologies
 
 
+## News
+
 <!--  This is curator.io feed -->
 <!-- <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
 
@@ -46,7 +48,7 @@ The Javascript can be moved to the end of the html page before the </body> tag -
 
 <!--
 I've now made my own widget — see partials/home/linkedin_news.html.
-This uses rss.app and the feed will only be refreshed by rebuilding the page (via GitHub Actions). The nice thing is this is totally free.
+This uses rss.app and the feed will only be refreshed by rebuilding the page (via GitHub Actions). Thought this was free  - but rss.app requires subscription
 The widget is added inside background.html in the section "Latest News".
 -->
 
