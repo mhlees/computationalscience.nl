@@ -49,3 +49,7 @@ I've now made my own widget — see partials/home/linkedin_news.html.
 This uses rss.app and the feed will only be refreshed by rebuilding the page (via GitHub Actions). The nice thing is this is totally free.
 The widget is added inside background.html in the section "Latest News".
 -->
+
+<!-- Elfsight LinkedIn Feed | Untitled LinkedIn Feed -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-13fbf5fa-1e39-4c7c-bbab-6589c872bef2" data-elfsight-app-lazy></div>
