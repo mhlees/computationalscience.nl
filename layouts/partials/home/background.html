@@ -87,8 +87,9 @@
     </div>
   </div>
 </article>
-<section>
-  {{ partial "recent-articles/main.html" . }}
+<section class="mt-12 border-t pt-8">
+  <h2 class="text-2xl font-bold mb-6 text-center">Latest News</h2>
+  {{ partial "home/linkedin_news.html" . }}
 </section>
 {{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
   <div

@@ -1,0 +1,71 @@
+{{ $url := "https://rss.app/feeds/cVNTMAcsAKGtlNus.xml" }}
+{{ with resources.GetRemote $url }}
+  {{ with . | transform.Unmarshal }}
+    {{ $widget := site.Params.homepage.linkedinWidget }}
+    {{ $cardMinWidth := $widget.cardMinWidth | default "260px" }}
+    {{ $gridGap := $widget.gridGap | default "1rem" }}
+    {{ $titleSize := $widget.titleSize | default "0.95rem" }}
+    {{ $dateSize := $widget.dateSize | default "0.72rem" }}
+    {{ $descSize := $widget.descSize | default "0.85rem" }}
+    {{ $maxWords := $widget.maxWords | default 24 }}
+    {{ $cardPadding := $widget.cardPadding | default "0.75rem" }}
+    {{ $contentGap := $widget.contentGap | default "0.5rem" }}
+    {{ $descLineHeight := $widget.descLineHeight | default "1.35" }}
+    {{ $linkSize := $widget.linkSize | default "0.78rem" }}
+    {{ $descClampLines := $widget.descClampLines | default 0 }}
+    {{ $cardMinHeight := $widget.cardMinHeight | default "" }}
+    <style>
+      .linkedin-grid {
+        display: grid;
+      }
+    </style>
+    <div class="linkedin-grid" style="grid-template-columns: repeat(auto-fill, minmax({{ $cardMinWidth }}, 1fr)); gap: {{ $gridGap }};">
+      {{ range first 6 .channel.item }}
+        <div class="bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-xl shadow-sm hover:shadow-md transition flex flex-col linkedin-card" style="padding: {{ $cardPadding }}; gap: {{ $contentGap }};{{ if $cardMinHeight }} min-height: {{ $cardMinHeight }};{{ end }}">
+          <div class="flex items-center justify-start gap-2">
+            {{ $logo := site.Params.logo | default "logo.png" }}
+            <img src="{{ $logo | relURL }}" alt="" class="h-6 w-6 object-contain rounded-full">
+            <div class="flex flex-col">
+              <span class="title font-bold" style="font-size: {{ $titleSize }}; line-height: 1.2;">{{ site.Title }}</span>
+              <span class="date text-neutral-500 dark:text-neutral-400" style="font-size: {{ $dateSize }}; line-height: 1.2;">{{ .pubDate | dateFormat "01/02/2006" }}</span>
+            </div>
+          </div>
+          {{ $raw := .description | default .title }}
+          {{ $plain := $raw | plainify }}
+          {{ $split := split $plain " " }}
+          {{ $excerpt := delimit (first $maxWords $split) " " }}
+          {{ $excerpt = printf "%s%s" $excerpt (cond (gt (len $split) $maxWords) "…" "") }}
+          {{ if gt $descClampLines 0 }}
+            <p class="desc text-neutral-700 dark:text-neutral-300" style="font-size: {{ $descSize }}; line-height: {{ $descLineHeight }}; display: -webkit-box; -webkit-line-clamp: {{ $descClampLines }}; -webkit-box-orient: vertical; overflow: hidden;">{{ $excerpt }}</p>
+          {{ else }}
+            <p class="desc text-neutral-700 dark:text-neutral-300" style="font-size: {{ $descSize }}; line-height: {{ $descLineHeight }};">{{ $excerpt }}</p>
+          {{ end }}
+          <a href="{{ .link }}" target="_blank" class="text-primary-600 hover:text-primary-700 font-medium" style="font-size: {{ $linkSize }}; line-height: 1.2;">Read More</a>
+          {{ $img := "" }}
+          {{ with .enclosure.url }}
+            {{ $img = . }}
+          {{ end }}
+          {{ if not $img }}
+            {{ with .enclosure }}
+              {{ $img = . }}
+            {{ end }}
+          {{ end }}
+          {{ if not $img }}
+            {{ with .description }}
+              {{ $desc := . }}
+              {{ $match := index (findRE `<img[^>]*src="([^"]+)"` $desc) 0 }}
+              {{ if $match }}
+                {{ $img = replaceRE `<img[^>]*src="([^"]+)"` "$1" $match }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ with $img }}
+            <div class="rounded-lg overflow-hidden" style="aspect-ratio: 16/9;">
+              <img src="{{ . }}" alt="" class="w-full h-full object-cover" loading="lazy">
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
