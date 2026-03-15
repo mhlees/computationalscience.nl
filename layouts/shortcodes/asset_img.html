@@ -1,0 +1,10 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $class := .Get "class" -}}
+{{- $resource := resources.Get $src -}}
+{{- if $resource -}}
+  <img src="{{ $resource.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}">
+{{- else -}}
+  {{/* Fallback to original src if resource not found */}}
+  <img src="{{ $src }}" alt="{{ $alt }}" class="{{ $class }}">
+{{- end -}}

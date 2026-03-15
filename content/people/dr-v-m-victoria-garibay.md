@@ -5,8 +5,10 @@ draft = false
 description = "Postdoc"
 image = "img/people/dr-v-m-victoria-garibay.jpg"
 group = "PhDs & Postdocs"
+active = false
 email = ""
 website = "https://www.linkedin.com/in/victoria-garibay-91137b97/"
+seniority = 4
 +++
 
 Role: Postdoc

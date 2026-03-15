@@ -5,8 +5,10 @@ draft = false
 description = "Postdoc"
 image = "img/people/dr-b-v-ben-meylahn.jpg"
 group = "PhDs & Postdocs"
+active = true
 email = ""
 website = ""
+seniority = 4
 +++
 
 Role: Postdoc

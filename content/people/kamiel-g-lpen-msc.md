@@ -5,8 +5,10 @@ draft = false
 description = "PhD student (project with RIVM)"
 image = "img/people/kamiel-g-lpen-msc.jpg"
 group = "PhDs & Postdocs"
+active = true
 email = ""
 website = ""
+seniority = 4
 +++
 
 Role: PhD student (project with RIVM)

@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-r-rick-quax.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = "https://staff.fnwi.uva.nl/r.quax/"
-seniority = 7
+seniority = 3
 +++
 
 Role: Assistant Professor

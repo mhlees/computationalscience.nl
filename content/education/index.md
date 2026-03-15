@@ -5,6 +5,8 @@ showDate: false
 showTableOfContents: true
 showWordCount: false
 showReadingTime: false
+showPagination: false
+showRelatedContent: false
 ---
 
 The Computational Science Lab is the primary driver behind two interdisciplinary Master's programmes at the University of Amsterdam. We bridge the gap between complex theory and large-scale simulation.

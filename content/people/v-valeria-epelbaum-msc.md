@@ -5,8 +5,10 @@ draft = false
 description = "PhD student (Urban Mental Health poject, FMG-FNWI collaboration)"
 image = "img/people/v-valeria-epelbaum-msc.jpg"
 group = "PhDs & Postdocs"
+active = true
 email = ""
 website = ""
+seniority = 4
 +++
 
 Role: PhD student (Urban Mental Health poject, FMG-FNWI collaboration)

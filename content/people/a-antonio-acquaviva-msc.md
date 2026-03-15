@@ -5,8 +5,10 @@ draft = false
 description = "PhD student"
 image = "img/people/a-antonio-acquaviva-msc.jpg"
 group = "PhDs & Postdocs"
+active = true
 email = ""
 website = "https://www.seedbiomed.com/Profiles/AntonioAcquaviva.html"
+seniority = 4
 +++
 
 Role: PhD student

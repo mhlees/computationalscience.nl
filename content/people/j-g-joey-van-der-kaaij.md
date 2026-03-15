@@ -5,8 +5,10 @@ draft = false
 description = "Lab coordinator Visualisation Lab and Intelligent Robotics Lab"
 image = ""
 group = "Other"
+active = false
 email = ""
 website = "https://www.linkedin.com/in/joey-van-der-kaaij-3862652b/"
+seniority = 4
 +++
 
 Role: Lab coordinator Visualisation Lab and Intelligent Robotics Lab

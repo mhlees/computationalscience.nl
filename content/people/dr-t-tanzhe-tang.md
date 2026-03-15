@@ -5,8 +5,10 @@ draft = false
 description = "Postdoc"
 image = ""
 group = "PhDs & Postdocs"
+active = true
 email = ""
 website = ""
+seniority = 4
 +++
 
 Role: Postdoc

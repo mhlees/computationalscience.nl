@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-v-vivek-sheraton-muniraj.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = "https://www.seedbiomed.com/Profiles/VivekSheratonM"
-seniority = 14
+seniority = 3
 +++
 
 Role: Assistant Professor

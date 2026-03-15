@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-v-valeria-krzhizhanovskaya.png"
 group = "Faculty"
+active = true
 email = ""
 website = "http://staff.fnwi.uva.nl/v.krzhizhanovskaya/"
-seniority = 6
+seniority = 3
 +++
 
 Role: Assistant Professor

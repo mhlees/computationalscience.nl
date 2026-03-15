@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-d-debraj-roy.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = "https://www.linkedin.com/in/debraj-roy-74b1191b3/"
-seniority = 18
+seniority = 3
 +++
 
 Role: Assistant Professor

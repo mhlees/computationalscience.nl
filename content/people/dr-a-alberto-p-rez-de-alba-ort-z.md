@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-a-alberto-p-rez-de-alba-ort-z.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = "https://www.compchem.nl/staff_members/alberto/"
-seniority = 23
+seniority = 3
 +++
 
 Role: Assistant Professor

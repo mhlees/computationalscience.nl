@@ -5,8 +5,10 @@ draft = false
 description = "Scientific Programmer"
 image = "img/people/d-david-de-kanter-msc.png"
 group = "Other"
+active = true
 email = ""
 website = "https://www.uva.nl/profiel/k/a/d.dekanter/d.de-kanter.html"
+seniority = 4
 +++
 
 Role: Scientific Programmer

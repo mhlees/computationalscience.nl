@@ -5,8 +5,10 @@ draft = false
 description = "Postdoc"
 image = "img/people/dr-j-jie-li.jpg"
 group = "PhDs & Postdocs"
+active = false
 email = ""
 website = ""
+seniority = 4
 +++
 
 Role: Postdoc

@@ -5,8 +5,10 @@ draft = false
 description = "PhD student"
 image = "img/people/j-jelle-van-dijk-msc.jpg"
 group = "PhDs & Postdocs"
+active = true
 email = ""
 website = "https://www.linkedin.com/in/jelle-v-dijk/"
+seniority = 4
 +++
 
 Role: PhD student

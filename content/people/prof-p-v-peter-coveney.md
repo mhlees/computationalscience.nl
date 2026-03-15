@@ -5,6 +5,7 @@ draft = false
 description = "Professor by Special Appointment"
 image = "img/people/prof-p-v-peter-coveney.jpg"
 group = "Faculty"
+active = false
 email = ""
 website = "https://www.ucl.ac.uk/chemistry/people/peter-coveney"
 seniority = 4

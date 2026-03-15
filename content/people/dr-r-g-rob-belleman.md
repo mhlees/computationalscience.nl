@@ -5,9 +5,10 @@ draft = false
 description = "Lecturer"
 image = "img/people/dr-r-g-rob-belleman.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = "https://staff.fnwi.uva.nl/r.g.belleman/"
-seniority = 5
+seniority = 4
 +++
 
 Role: Lecturer

@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-a-andrea-tabi.jpg"
 group = "Faculty"
+active = false
 email = ""
 website = ""
-seniority = 19
+seniority = 3
 +++
 
 Role: Assistant Professor

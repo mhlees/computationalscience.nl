@@ -24,17 +24,21 @@ theme = "blowfish"
   url = "https://publications.computationalscience.nl"
   weight = 40
 [[menu.main]]
+  name = "Community"
+  url = "/community"
+  weight = 50
+[[menu.main]]
   name = "Contact"
   url = "/contact"
-  weight = 50
+  weight = 60
 
 # --- 3. THEME PARAMS ---
 [params]
   colorScheme = "blowfish"
   defaultAppearance = "light" # Blowfish uses 'defaultAppearance', not 'defaultTheme'
   # Header Logo
-  logo = "logo_only.png"
-  secondaryLogo = "logo_only-dark.png"
+  logo = "main/logo_only.png"
+  secondaryLogo = "main/logo_only-dark.png"
   # enableA11y = false
   customCSS = ["css/custom.css"] 
 
@@ -46,7 +50,7 @@ theme = "blowfish"
   layout = "background"
   # Add this line to ensure the content doesn't hide the background
   layoutBackgroundBlur = true
-  homepageImage = "animated.svg"
+  homepageImage = "main/animated.svg"
 [params.footer]
   showThemeAttribution = false
 

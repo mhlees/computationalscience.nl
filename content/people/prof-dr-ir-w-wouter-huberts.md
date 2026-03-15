@@ -5,9 +5,10 @@ draft = false
 description = "Professor by Special Appointment"
 image = "img/people/prof-dr-ir-w-wouter-huberts.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = ""
-seniority = 10
+seniority = 4
 +++
 
 Role: Professor by Special Appointment

@@ -5,9 +5,10 @@ draft = false
 description = "Assistant Professor"
 image = "img/people/dr-s-sven-karbach.jpg"
 group = "Faculty"
+active = true
 email = ""
 website = "https://sven-karbach.de/"
-seniority = 15
+seniority = 3
 +++
 
 Role: Assistant Professor
