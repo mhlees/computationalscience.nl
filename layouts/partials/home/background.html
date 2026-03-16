@@ -31,16 +31,23 @@
             {{ with $.Params.imagePosition | default $defaultPosition }}
               {{ $style = printf "object-position: %s;" . }}
             {{ end }}
+            {{ if eq $homepageImage.MediaType.MainType "video" }}
+            <video id="background-image" class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover" autoplay loop muted
+              playsinline {{ if $style }}style="{{ $style | safeCSS }}" {{ end }}>
+              <source src="{{ $homepageImage.RelPermalink }}" type="{{ $homepageImage.MediaType }}">
+            </video>
+            {{ else }}
             <img
               id="background-image"
               class="nozoom mt-0 mr-0 mb-0 ml-0 h-[1000px] w-full object-cover"
               src="{{ $homepageImage.RelPermalink }}"
               role="presentation"
               {{ if $style }}style="{{ $style | safeCSS }}"{{ end }}>
+            {{ end }}
             <div
               class="from-neutral absolute inset-0 h-[1000px] bg-gradient-to-t to-transparent mix-blend-normal dark:from-neutral-800"></div>
             <div
-              class="from-neutral absolute inset-0 h-[1500px] bg-gradient-to-t to-neutral-100 opacity-[.80] mix-blend-normal dark:from-neutral-800 dark:to-neutral-800", style="opacity: 0.8  ;"></div>
+              class="from-neutral absolute inset-0 h-[1500px] bg-gradient-to-t to-neutral-100 opacity-[.80] mix-blend-normal dark:from-neutral-800 dark:to-neutral-800", style="opacity: 0.9  ;"></div>
           {{ end }}
         </div>
         <div class="relative flex flex-col items-center justify-center px-1 py-1 text-center">
@@ -103,5 +110,5 @@
     integrity="{{ $backgroundBlur.Data.Integrity }}"
     data-blur-id="background-blur"
     data-image-id="background-image"
-    {{ if $homepageImage }}data-image-url="{{ $homepageImage.RelPermalink }}"{{ end }}></script>
+    {{ if and $homepageImage (ne $homepageImage.MediaType.MainType "video") }}data-image-url="{{ $homepageImage.RelPermalink }}"{{ end }}></script>
 {{ end }}

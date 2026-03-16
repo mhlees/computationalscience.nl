@@ -131,7 +131,7 @@
           {{ end }}
           {{ end }}
           {{ if not (or $processedImage $image) }}
-          {{ $placeholderResource := resources.Get "people/place-holder.png" }}
+          {{ $placeholderResource := resources.Get "place-holder.png" }}
           {{ if $placeholderResource }}
           {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
           {{ end }}

@@ -5,10 +5,10 @@ layout: "Hero"
 ---
 
 <div class="block dark:hidden">
-  {{< figure src="logo.png" class="home-logo mx-auto block" >}}
+  {{< figure src="main/logo.png" class="home-logo mx-auto block" >}}
 </div>
 <div class="hidden dark:block">
-  {{< figure src="logo-dark.png" class="home-logo mx-auto block" >}}
+  {{< figure src="main/logo-dark.png" class="home-logo mx-auto block" >}}
 </div>
 
 # Group Vision

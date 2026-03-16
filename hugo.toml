@@ -50,7 +50,7 @@ theme = "blowfish"
   layout = "background"
   # Add this line to ensure the content doesn't hide the background
   layoutBackgroundBlur = true
-  homepageImage = "main/animated.svg"
+  homepageImage = "main/animated.mp4"
 [params.footer]
   showThemeAttribution = false
 
