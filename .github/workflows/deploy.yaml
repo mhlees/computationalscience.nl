@@ -1,10 +1,8 @@
 name: Deploy to TransIP VPS
-
 on:
   push:
     branches:
       - main 
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -24,7 +22,7 @@ jobs:
       - name: Build Hugo Site
         run: hugo --minify
 
-   - name: Sync to VPS via Rsync
+      - name: Sync to VPS via Rsync
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
