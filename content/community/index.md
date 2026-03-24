@@ -39,7 +39,7 @@ showRelatedContent: false
 <img src="/community/logos/iccs-meeting.png" alt="ICCS Meeting" class="h-10 w-auto object-contain shrink-0">
 <div>
 <h2 class="text-xl font-semibold mb-1">ICCS Meeting</h2>
-<p class="text-base text-neutral-700 dark:text-neutral-300">The International Conference on Computational Science series, a leading venue for advances in modeling, simulation, and computation.</p>
+<p class="text-base text-neutral-700 dark:text-neutral-300">The International Conference on Computational Science series, a leading venue for advances in modeling, simulation, and complex systems.</p>
 </div>
 </div>
 </a>
