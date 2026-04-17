@@ -31,7 +31,7 @@
         <div id="people-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {{ range $groupPages }}
             <div class="flex flex-col items-center text-center mb-5">
-              <div class="relative w-40 h-40 mb-2">
+              <div class="relative w-40 h-40 mb-2 shrink-0 aspect-square">
                 {{ $image := .Params.image }}
                 {{ $processedImage := "" }}
                 
@@ -61,17 +61,17 @@
                   {{ end }}
                 {{ end }}
 
+                <a href="{{ .RelPermalink }}" class="block w-full h-full">
                 {{ if $processedImage }}
-                  <img src="{{ $processedImage.RelPermalink }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700">
+                  <img src="{{ $processedImage.RelPermalink }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
                 {{ else if $image }}
-                  {{/* Fallback for external URLs or static images not in assets */}}
-                  <img src="{{ $image | relURL }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700">
+                  <img src="{{ $image | relURL }}" alt="{{ .Title }}" class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
                 {{ else }}
-                  {{/* Final fallback if even placeholder is missing */}}
-                  <div class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400">
+                  <div class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400 transition hover:ring-4 hover:ring-primary-300">
                     <span class="text-4xl">?</span>
                   </div>
                 {{ end }}
+                </a>
               </div>
               
               <h3 class="text-sm font-bold text-neutral-900 dark:text-neutral-100 leading-tight ">
@@ -115,7 +115,7 @@
     <div id="alumni-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
       {{ range $alumniPages.ByTitle }}
       <div class="flex flex-col items-center text-center mb-5">
-        <div class="relative w-40 h-40 mb-2">
+        <div class="relative w-40 h-40 mb-2 shrink-0 aspect-square">
           {{ $image := .Params.image }}
           {{ $processedImage := "" }}
           {{ if $image }}
@@ -136,18 +136,20 @@
           {{ $processedImage = $placeholderResource.Fill "300x300 Center" }}
           {{ end }}
           {{ end }}
+          <a href="{{ .RelPermalink }}" class="block w-full h-full">
           {{ if $processedImage }}
           <img src="{{ $processedImage.RelPermalink }}" alt="{{ .Title }}"
-            class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700">
+            class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
           {{ else if $image }}
           <img src="{{ $image | relURL }}" alt="{{ .Title }}"
-            class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700">
+            class="rounded-full w-full h-full object-cover shadow-md border-2 border-neutral-200 dark:border-neutral-700 transition hover:ring-4 hover:ring-primary-300">
           {{ else }}
           <div
-            class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400">
+            class="rounded-full w-full h-full bg-neutral-200 dark:bg-neutral-700 flex items-center justify-center text-neutral-400 transition hover:ring-4 hover:ring-primary-300">
             <span class="text-4xl">?</span>
           </div>
           {{ end }}
+          </a>
         </div>
         <h3 class="text-sm font-bold text-neutral-900 dark:text-neutral-100 leading-tight ">
           <a href="{{ .RelPermalink }}" class="hover:text-primary-600 transition-colors">{{ .Title }}</a>

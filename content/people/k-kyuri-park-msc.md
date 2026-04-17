@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Computational Psychology", "Computational Social Science", "Quantitative Finance"]
+method_keywords = ["System Dynamics & Causal Modeling", "Data-Driven Modeling & AI", "Network Science"]
 +++
 
-Role: PhD student
-
-[Profile Link]()

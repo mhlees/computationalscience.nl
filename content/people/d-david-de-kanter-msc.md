@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.uva.nl/profiel/k/a/d.dekanter/d.de-kanter.html"
 seniority = 4
+domain_keywords = ["Computational Psychology", "Computational Social Science", "Computational Physics"]
+method_keywords = ["Agent-Based Modeling (ABM)", "Data-Driven Modeling & AI"]
 +++
 
-Role: Scientific Programmer
-
-[Profile Link](https://www.uva.nl/profiel/k/a/d.dekanter/d.de-kanter.html)

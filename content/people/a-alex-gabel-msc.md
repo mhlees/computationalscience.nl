@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/alex-gabel/"
 seniority = 4
+domain_keywords = ["Computational Psychology", "Computational Physics", "Computational Chemistry"]
+method_keywords = ["Multi-Scale Simulation", "Data-Driven Modeling & AI", "Network Science"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.linkedin.com/in/alex-gabel/)

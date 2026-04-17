@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.uva.nl/en/profile/p/h/m.t.pham/m.t.pham.html"
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: Postdoc
-
-[Profile Link]()

@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Computational Psychology", "Computational Social Science"]
+method_keywords = ["Data-Driven Modeling & AI", "Network Science", "Information Theory"]
 +++
 
-Role: PhD student (Urban Mental Health poject, FMG-FNWI collaboration)
-
-[Profile Link]()

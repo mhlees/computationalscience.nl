@@ -9,8 +9,7 @@ active = false
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: PhD student (project of the Netherlands eScience Centre)
-
-[Profile Link]()

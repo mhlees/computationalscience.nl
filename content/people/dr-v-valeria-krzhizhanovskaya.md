@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "http://staff.fnwi.uva.nl/v.krzhizhanovskaya/"
 seniority = 3
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Computational Biomedicine", "Materials Science", "Quantitative Finance", "Economics", "Urban Dynamics", "Computational Physics", "Computational Chemistry", "Complex Systems", "Computational Psychology"]
+method_keywords = ["Digital Twins", "System Dynamics & Causal Modeling", "Game Theory", "Network Science", "Information Theory", "Multi-Scale Simulation", "High-Performance Computing (HPC)", "Data-Driven Modeling & AI"]
 +++
 
-Role: Assistant Professor
-
-[Profile Link](http://staff.fnwi.uva.nl/v.krzhizhanovskaya/)

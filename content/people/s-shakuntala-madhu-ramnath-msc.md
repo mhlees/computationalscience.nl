@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: PhD student (project together with A-UMC)
-
-[Profile Link]()

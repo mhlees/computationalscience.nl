@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://www.linkedin.com/in/mwjvandenende/"
 seniority = 4
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Urban Dynamics", "Complex Systems", "Computational Psychology"]
+method_keywords = ["Agent-Based Modeling (ABM)", "Data-Driven Modeling & AI", "Network Science", "Information Theory"]
 +++
 
-Role: PhD student (project of the Centre for Urban Mental Health of the UvA)
-
-[Profile Link](https://www.linkedin.com/in/mwjvandenende/)

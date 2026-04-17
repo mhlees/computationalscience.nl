@@ -1,0 +1,12 @@
+Complex Systems Modeling
+Multi-Scale Simulation 
+Network Science 
+Agent-Based Modeling (ABM)  
+Digital Twins 
+Data-Driven Modeling & AI
+Information Theory
+System Dynamics & Causal Modeling
+High-Performance Computing (HPC)
+Scientific Machine Learning (SciML)
+Quantum Computing
+Game Theory

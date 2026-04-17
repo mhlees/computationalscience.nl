@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://uk.linkedin.com/in/martina-maglicic-35a0a2a7"
 seniority = 4
+domain_keywords = ["Complex Systems", "Computational Psychology", "Computational Social Science", "Sustainability & Ecology"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: PhD student (project together with the Economics department)
-
-[Profile Link](https://uk.linkedin.com/in/martina-maglicic-35a0a2a7)

@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.compchem.nl/staff_members/alberto/"
 seniority = 3
+domain_keywords = ["Computational Biomedicine", "Quantitative Finance", "Urban Dynamics", "Computational Physics", "Computational Chemistry", "Complex Systems", "Computational Psychology"]
+method_keywords = ["Multi-Scale Simulation", "Agent-Based Modeling (ABM)", "Network Science", "Information Theory"]
 +++
 
-Role: Assistant Professor
-
-[Profile Link](https://www.compchem.nl/staff_members/alberto/)

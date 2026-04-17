@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 1
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: Professor
-
-[Profile Link]()

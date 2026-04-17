@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Quantitative Finance", "Economics", "Computational Physics", "Computational Chemistry", "Computational Psychology"]
+method_keywords = ["Multi-Scale Simulation", "Data-Driven Modeling & AI", "Network Science"]
 +++
 
-Role: Professor by Special Appointment
-
-[Profile Link]()

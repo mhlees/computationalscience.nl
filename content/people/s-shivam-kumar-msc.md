@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.seedbiomed.com/Profiles/ShivamKumar.html"
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Data-Driven Modeling & AI"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.seedbiomed.com/Profiles/ShivamKumar.html)

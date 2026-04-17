@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Economics", "Computational Social Science", "Computational Biomedicine"]
+method_keywords = ["Data-Driven Modeling & AI", "Information Theory"]
 +++
 
-Role: PhD student
-
-[Profile Link]()

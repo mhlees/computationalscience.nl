@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.seedbiomed.com/Profiles/RolandVBumbuc.html"
 seniority = 4
+domain_keywords = ["Computational Social Science", "Computational Biomedicine", "Computational Physics", "Complex Systems", "Computational Psychology"]
+method_keywords = ["System Dynamics & Causal Modeling", "Quantum Computing", "Game Theory", "Network Science", "Information Theory", "Multi-Scale Simulation", "Data-Driven Modeling & AI"]
 +++
 
-Role: PhD student(collab. with VUmc)
-
-[Profile Link](https://www.seedbiomed.com/Profiles/RolandVBumbuc.html)

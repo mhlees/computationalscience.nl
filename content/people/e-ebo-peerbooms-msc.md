@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://www.linkedin.com/in/ebo-peerbooms/"
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: PhD student (project together with the Institute of Physics)
-
-[Profile Link](https://www.linkedin.com/in/ebo-peerbooms/)

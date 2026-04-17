@@ -9,8 +9,7 @@ active = true
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Computational Social Science", "Computational Biomedicine", "Quantitative Finance", "Economics", "Computational Physics", "Computational Psychology"]
+method_keywords = ["Agent-Based Modeling (ABM)", "Data-Driven Modeling & AI", "Network Science"]
 +++
 
-Role: Postdoc
-
-[Profile Link]()

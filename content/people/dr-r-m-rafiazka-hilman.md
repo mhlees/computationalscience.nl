@@ -9,8 +9,7 @@ active = false
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Computational Psychology", "Urban Dynamics"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: Postdoc
-
-[Profile Link]()

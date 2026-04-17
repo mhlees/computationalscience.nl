@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/konstantinos-chatziandreou/"
 seniority = 4
+domain_keywords = ["Economics", "Computational Psychology", "Computational Social Science", "Quantitative Finance"]
+method_keywords = ["Network Science"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.linkedin.com/in/konstantinos-chatziandreou/)

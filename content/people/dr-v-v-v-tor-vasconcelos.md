@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://vvvasconcelos.github.io/"
 seniority = 2
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Computational Biomedicine", "Materials Science", "Quantitative Finance", "Economics", "Urban Dynamics", "Computational Physics", "Complex Systems", "Computational Psychology"]
+method_keywords = ["Digital Twins", "System Dynamics & Causal Modeling", "Agent-Based Modeling (ABM)", "Quantum Computing", "Game Theory", "Network Science", "Information Theory", "Multi-Scale Simulation", "Data-Driven Modeling & AI"]
 +++
 
-Role: Associate Professor
-
-[Profile Link](https://vvvasconcelos.github.io/)

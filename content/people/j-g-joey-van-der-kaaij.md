@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/joey-van-der-kaaij-3862652b/"
 seniority = 4
+domain_keywords = ["Computational Psychology"]
+method_keywords = ["Multi-Scale Simulation", "Data-Driven Modeling & AI"]
 +++
 
-Role: Lab coordinator Visualisation Lab and Intelligent Robotics Lab
-
-[Profile Link](https://www.linkedin.com/in/joey-van-der-kaaij-3862652b/)

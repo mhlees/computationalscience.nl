@@ -9,8 +9,7 @@ active = false
 email = ""
 website = ""
 seniority = 4
+domain_keywords = ["Computational Social Science", "Computational Biomedicine", "Urban Dynamics", "Computational Physics", "Computational Psychology"]
+method_keywords = ["System Dynamics & Causal Modeling", "Quantum Computing", "Game Theory", "Network Science", "Information Theory", "Multi-Scale Simulation", "Data-Driven Modeling & AI"]
 +++
 
-Role: Postdoc
-
-[Profile Link]()

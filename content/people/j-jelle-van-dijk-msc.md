@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/jelle-v-dijk/"
 seniority = 4
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Quantitative Finance", "Economics", "Urban Dynamics", "Complex Systems"]
+method_keywords = ["Multi-Scale Simulation", "High-Performance Computing (HPC)", "Data-Driven Modeling & AI"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.linkedin.com/in/jelle-v-dijk/)

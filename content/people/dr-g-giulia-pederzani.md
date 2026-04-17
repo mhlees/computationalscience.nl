@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://www.linkedin.com/in/giulia-pederzani/"
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: Postdoc
-
-[Profile Link](https://www.linkedin.com/in/giulia-pederzani/)

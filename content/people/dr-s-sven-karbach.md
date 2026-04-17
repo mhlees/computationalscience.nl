@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://sven-karbach.de/"
 seniority = 3
+domain_keywords = ["Computational Social Science", "Computational Biomedicine", "Quantitative Finance", "Economics", "Urban Dynamics", "Computational Psychology"]
+method_keywords = ["System Dynamics & Causal Modeling", "Game Theory", "Data-Driven Modeling & AI", "Network Science"]
 +++
 
-Role: Assistant Professor
-
-[Profile Link](https://sven-karbach.de/)

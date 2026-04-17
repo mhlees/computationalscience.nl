@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://www.linkedin.com/in/philip-rutten-235a316/"
 seniority = 4
+domain_keywords = ["Computational Social Science", "Computational Physics"]
+method_keywords = ["Multi-Scale Simulation", "Game Theory", "Data-Driven Modeling & AI"]
 +++
 
-Role: PhD student (project of the Netherlands eScience Centre)
-
-[Profile Link](https://www.linkedin.com/in/philip-rutten-235a316/)

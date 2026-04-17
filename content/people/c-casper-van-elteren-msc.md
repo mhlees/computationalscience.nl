@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://thefriendlyghost.nl/"
 seniority = 4
+domain_keywords = ["Complex Systems", "Computational Social Science", "Computational Physics", "Computational Biomedicine"]
+method_keywords = ["Digital Twins", "Data-Driven Modeling & AI", "Network Science", "Information Theory"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://thefriendlyghost.nl/)

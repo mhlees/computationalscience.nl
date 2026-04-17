@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/niksa-mohammadi-bagheri-168404191/"
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Data-Driven Modeling & AI"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.linkedin.com/in/niksa-mohammadi-bagheri-168404191/)

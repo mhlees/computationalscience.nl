@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "http://www.science.uva.nl/~jaapk/"
 seniority = 2
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Computational Biomedicine", "Materials Science", "Urban Dynamics", "Computational Physics", "Computational Chemistry", "Complex Systems"]
+method_keywords = ["Agent-Based Modeling (ABM)", "Quantum Computing", "Game Theory", "Network Science", "Multi-Scale Simulation", "High-Performance Computing (HPC)", "Data-Driven Modeling & AI"]
 +++
 
-Role: Associate Professor
-
-[Profile Link](http://www.science.uva.nl/~jaapk/)

@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/isaak-mengesha-3544ab1b0/"
 seniority = 4
+domain_keywords = ["Complex Systems", "Computational Physics", "Sustainability & Ecology", "Computational Chemistry"]
+method_keywords = ["Quantum Computing"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.linkedin.com/in/isaak-mengesha-3544ab1b0/)

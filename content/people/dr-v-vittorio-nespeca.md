@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://www.linkedin.com/in/vittorionespeca/"
 seniority = 4
+domain_keywords = ["Computational Physics", "Computational Biomedicine"]
+method_keywords = ["Data-Driven Modeling & AI", "Quantum Computing"]
 +++
 
-Role: Postdoc
-
-[Profile Link](https://www.linkedin.com/in/vittorionespeca/)

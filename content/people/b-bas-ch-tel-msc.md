@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/bastiaan-chatel/"
 seniority = 4
+domain_keywords = ["Computational Psychology", "Computational Social Science", "Computational Biomedicine"]
+method_keywords = ["Multi-Scale Simulation", "System Dynamics & Causal Modeling", "Data-Driven Modeling & AI", "Network Science"]
 +++
 
-Role: Postdoc
-
-[Profile Link](https://www.linkedin.com/in/bastiaan-chatel/)

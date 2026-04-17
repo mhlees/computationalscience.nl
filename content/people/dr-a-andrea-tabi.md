@@ -9,8 +9,7 @@ active = false
 email = ""
 website = ""
 seniority = 3
+domain_keywords = ["Sustainability & Ecology", "Computational Biomedicine", "Quantitative Finance", "Urban Dynamics", "Complex Systems"]
+method_keywords = ["Multi-Scale Simulation", "Data-Driven Modeling & AI", "Information Theory"]
 +++
 
-Role: Assistant Professor
-
-[Profile Link]()

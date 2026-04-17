@@ -36,6 +36,7 @@ theme = "blowfish"
 [params]
   colorScheme = "blowfish"
   defaultAppearance = "light" # Blowfish uses 'defaultAppearance', not 'defaultTheme'
+  disableImageZoom = true
   # Header Logo
   logo = "main/logo_only.png"
   secondaryLogo = "main/logo_only-dark.png"

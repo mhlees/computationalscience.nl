@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "http://lptms.u-psud.fr/clelia-de-mulatier/"
 seniority = 3
+domain_keywords = ["Computational Social Science", "Sustainability & Ecology", "Computational Biomedicine", "Quantitative Finance", "Economics", "Urban Dynamics", "Complex Systems", "Computational Psychology"]
+method_keywords = ["Multi-Scale Simulation", "System Dynamics & Causal Modeling", "Agent-Based Modeling (ABM)", "Data-Driven Modeling & AI"]
 +++
 
-Role: Assistant Professor
-
-[Profile Link](http://lptms.u-psud.fr/clelia-de-mulatier/)

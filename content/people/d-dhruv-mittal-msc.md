@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.linkedin.com/in/dhruv-m-114395114/"
 seniority = 4
+domain_keywords = ["Computational Social Science", "Urban Dynamics"]
+method_keywords = ["Multi-Scale Simulation", "Data-Driven Modeling & AI"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.linkedin.com/in/dhruv-m-114395114/)

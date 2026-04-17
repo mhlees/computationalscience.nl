@@ -9,8 +9,7 @@ active = false
 email = ""
 website = "https://www.linkedin.com/in/victoria-garibay-91137b97/"
 seniority = 4
+domain_keywords = ["Computational Biomedicine"]
+method_keywords = ["Multi-Scale Simulation", "Digital Twins"]
 +++
 
-Role: Postdoc
-
-[Profile Link](https://www.linkedin.com/in/victoria-garibay-91137b97/)

@@ -9,8 +9,7 @@ active = true
 email = ""
 website = "https://www.seedbiomed.com/Profiles/AntonioAcquaviva.html"
 seniority = 4
+domain_keywords = ["Complex Systems"]
+method_keywords = ["Complex Systems Modeling"]
 +++
 
-Role: PhD student
-
-[Profile Link](https://www.seedbiomed.com/Profiles/AntonioAcquaviva.html)
