@@ -17,3 +17,40 @@ a[href="#main-content"] {
 .header-spacer {
     min-height: 80px !important; /* Set exactly what you want here */
 }
+
+/* Education cards: make figure shortcode fill the image container */
+.edu-card-img {
+    position: relative !important;
+    overflow: hidden !important;
+}
+.edu-card-img figure {
+    position: absolute !important;
+    inset: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.edu-card-img figure img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+    border-radius: 0.75rem;
+}
+
+/* Spacing fixes for education cards */
+.edu-card {
+    gap: 1.5rem !important; /* Equivalent to gap-12 */
+}
+
+.edu-card-text {
+    padding-left: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .edu-card {
+        gap: 1.5rem !important;
+    }
+    .edu-card-text {
+        padding-left: 0 !important;
+    }
+}
