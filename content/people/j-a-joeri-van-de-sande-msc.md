@@ -11,6 +11,12 @@ website: ""
 seniority: 4
 domain_keywords:
   - "Complex Systems"
+  - "Medical Engineering"
+  - "Cardiovascular Biomechanics"
+  - "Digital Twins"
 method_keywords:
   - "Complex Systems Modeling"
+  - "Lumped Parameter Modeling"
+  - "Sensitivity Analysis"
+  - "Identifiability Analysis"
 ---
