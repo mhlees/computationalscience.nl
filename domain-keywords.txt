@@ -12,4 +12,5 @@ Computational Health
 Computational Neuroscience
 Computational Psychology
 Computational Physics
+Quantum Simulation
 Complex Systems

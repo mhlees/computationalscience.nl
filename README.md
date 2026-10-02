@@ -98,6 +98,7 @@ Full list is in [`domain-keywords.txt`](domain-keywords.txt):
 - `Computational Health`
 - `Computational Neuroscience`
 - `Computational Psychology`
+- `Quantum Simulation`
 - `Complex Systems`
 
 #### 2. Method Keywords
