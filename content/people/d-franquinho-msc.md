@@ -6,8 +6,8 @@ description: "PhD student"
 image: "img/people/d-franquinho-msc.jpg"
 group: "PhDs & Postdocs"
 active: true
-email: "https://diogofranquinho.com"
-website: ""
+email: ""
+website: "https://diogofranquinho.com"
 seniority: 4
 domain_keywords:
   - "Computational Finance"
